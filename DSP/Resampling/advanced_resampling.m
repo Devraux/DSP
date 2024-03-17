@@ -4,7 +4,7 @@ fs1 = 1000; %Hz input frequency
 fs2 = 9000; %Hz intermediate frequency
 dt = 1/fs1;
 dt2 = 1/fs2;
-N = 500; %liczba próbek
+N = 500; %number of samples
 t = linspace(0,N*dt,N); %time axis of the primary signal
 t2 = linspace(0,N*dt,4500); % time axis after upsampling
 t3 = linspace(0,N*dt,225); %final timeline 
@@ -58,7 +58,7 @@ title("input signal")
 plot(t,s,"-o");
 
 subplot(2,1,2);hold on;
-title("sygnal po odtworzeniu")
+title("after zero padding")
 plot(t2,S_odt,"-o");
 
 
