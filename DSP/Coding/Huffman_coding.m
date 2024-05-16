@@ -5,6 +5,7 @@ a = randi(10,1,100);
 N = length(a);
 parameter = 100;
 
+
 f = zeros(3,10);
 for n = 1 : 10 % drawn number
     p = 0;
