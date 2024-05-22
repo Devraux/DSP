@@ -1,12 +1,12 @@
 clc; close all; clear;
 
 R = 100; %filter order
-h = fir1(R, 1/15, hamming(R+1)); %filtr dolnoprzepustowy
+h = fir1(R, 1/15, hamming(R+1)); %low pass filter
 %frequency axis should be in 0:fs/2 range
 
 % [char_lp, f_lp] = freqz(h);
 
-%I save it under the variable I will work with
+%save it under the variable,
 h_lp = h;
 %index
 n = 0:(length(h_lp)-1);
